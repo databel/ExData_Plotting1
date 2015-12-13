@@ -1,6 +1,6 @@
 ##### PLOT2.R
 
-#1 Read Data
+# Read Data
 
 `datapower` <- read.table("~/doc/data-science/data-science-track/4-ds-exdata/project1/household_power_consumption.txt", sep=";", quote="\"", header=T)
 
@@ -38,5 +38,5 @@ datapower2$timestamp=as.POSIXct(datapower2$timestamp)
 
 ## Create and save PLOT 2 as plot2.png
 png("./plot2.png")
-plot(datapower2$timestamp,datapower5$Global_active_power,type="l", ylab="Global Active Power (kilowatts)", width = 480, height = 480, units = "px", xlab=" ")
+plot(datapower2$timestamp,datapower2$Global_active_power,type="l", ylab="Global Active Power (kilowatts)", width = 480, height = 480, units = "px", xlab=" ")
 dev.off()
